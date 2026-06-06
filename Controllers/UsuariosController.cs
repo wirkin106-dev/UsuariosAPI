@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using UsuariosAPI.DTOs;
 using UsuariosAPI.Services;
 
@@ -6,6 +7,7 @@ namespace UsuariosAPI.Controllers
 {
     [ApiController]
     [Route("api/usuarios")]
+    [Authorize]
     public class UsuariosController : ControllerBase
     {
         private readonly IUsuarioService _service;
@@ -32,6 +34,7 @@ namespace UsuariosAPI.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Create([FromBody] UsuarioDto dto)
         {
             if (!ModelState.IsValid)
