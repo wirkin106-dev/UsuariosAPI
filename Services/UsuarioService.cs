@@ -1,4 +1,6 @@
-﻿using UsuariosAPI.DTOs;
+﻿using System.Security.Cryptography;
+using System.Text;
+using UsuariosAPI.DTOs;
 using UsuariosAPI.Models;
 using UsuariosAPI.Repositories;
 
@@ -11,6 +13,13 @@ namespace UsuariosAPI.Services
         public UsuarioService(IUsuarioRepository repository)
         {
             _repository = repository;
+        }
+
+        private string HashPassword(string password)
+        {
+            using var sha256 = SHA256.Create();
+            var bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+            return Convert.ToHexString(bytes);
         }
 
         public async Task<IEnumerable<Usuario>> GetAllAsync()
@@ -33,7 +42,8 @@ namespace UsuariosAPI.Services
             {
                 Nombre = dto.Nombre,
                 Correo = dto.Correo,
-                FechaDeNacimiento = dto.FechaDeNacimiento
+                FechaDeNacimiento = dto.FechaDeNacimiento,
+                Password = HashPassword(dto.Password)
             };
 
             return await _repository.CreateAsync(usuario);
@@ -49,7 +59,8 @@ namespace UsuariosAPI.Services
             {
                 Nombre = dto.Nombre,
                 Correo = dto.Correo,
-                FechaDeNacimiento = dto.FechaDeNacimiento
+                FechaDeNacimiento = dto.FechaDeNacimiento,
+                Password = HashPassword(dto.Password)
             };
 
             return await _repository.UpdateAsync(id, usuario);

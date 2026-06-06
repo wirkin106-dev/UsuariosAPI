@@ -9,6 +9,7 @@ C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Usuario
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Azure.Core.dll
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Azure.Identity.dll
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Humanizer.dll
+C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
@@ -39,9 +40,6 @@ C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Microso
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Mono.TextTemplating.dll
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Newtonsoft.Json.dll
-C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\System.ClientModel.dll
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\System.CodeDom.dll
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\System.Composition.AttributedModel.dll
@@ -144,6 +142,7 @@ C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\Usuario
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\UsuariosAPI.csproj.CoreCompileInputs.cache
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\UsuariosAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\UsuariosAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\UsuariosAPI.sourcelink.json
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -160,3 +159,4 @@ C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\refint\
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\UsuariosAPI.pdb
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\UsuariosAPI.genruntimeconfig.cache
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\ref\UsuariosAPI.dll
+C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Scalar.AspNetCore.dll
