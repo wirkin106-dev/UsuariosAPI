@@ -224,16 +224,16 @@ Si intentas crear un usuario con un correo que ya existe:
 ### Tarea 6 - Autenticación JWT
 
 #### POST - Login (200 OK con token JWT)
-![POST Login](images/post-login.jfif)
+![POST Login](images/post-login.jpg)
 
 #### GET - Sin token (401 Unauthorized)
-![GET Sin token](images/get-sin-token.jfif)
+![GET Sin token](images/get-sin-token.jgp)
 
 #### GET - Con token (200 OK)
-![GET Con token](images/get-con-token.jfif)
+![GET Con token](images/get-con-token.jpg)
 
 #### POST - Refresh token (200 OK)
-![POST Refresh](images/post-refresh.jfif)
+![POST Refresh](images/post-refresh.jpg)
 
 ---
 
