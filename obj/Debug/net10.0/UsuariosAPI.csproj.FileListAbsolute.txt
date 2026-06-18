@@ -160,3 +160,4 @@ C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\Usuario
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\UsuariosAPI.genruntimeconfig.cache
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\obj\Debug\net10.0\ref\UsuariosAPI.dll
 C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Scalar.AspNetCore.dll
+C:\Users\Wirkin Alexi Montero\source\repos\UsuariosAPI\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
