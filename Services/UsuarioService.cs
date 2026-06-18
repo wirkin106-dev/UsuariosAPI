@@ -9,10 +9,12 @@ namespace UsuariosAPI.Services
     public class UsuarioService : IUsuarioService
     {
         private readonly IUsuarioRepository _repository;
+        private readonly ILogService _logService;
 
-        public UsuarioService(IUsuarioRepository repository)
+        public UsuarioService(IUsuarioRepository repository, ILogService logService)
         {
             _repository = repository;
+            _logService = logService;
         }
 
         private string HashPassword(string password)
@@ -46,7 +48,16 @@ namespace UsuariosAPI.Services
                 Password = HashPassword(dto.Password)
             };
 
-            return await _repository.CreateAsync(usuario);
+            var creado = await _repository.CreateAsync(usuario);
+
+            await _logService.RegistrarAsync(new LogEntryDto
+            {
+                Fecha = DateTime.UtcNow,
+                Accion = "REGISTRO",
+                Detalle = $"Usuario creado: {creado.Nombre} | Correo: {creado.Correo} | Id: {creado.Id}"
+            });
+
+            return creado;
         }
 
         public async Task<Usuario?> UpdateAsync(int id, UsuarioDto dto)

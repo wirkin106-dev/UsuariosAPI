@@ -35,11 +35,16 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
+
+
+
 builder.Services.AddAuthorization();
+
 
 // Usuarios
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+builder.Services.AddSingleton<ILogService, LogService>();
 
 // Categorias
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
@@ -55,15 +60,24 @@ builder.Services.AddScoped<IProductoService, ProductoService>();
 
 var app = builder.Build();
 
+// 1. Configuración de desarrollo (Unificada)
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
     app.MapScalarApiReference();
+
+    // Activa la interfaz clásica de Swagger apuntando al JSON nativo de .NET 10
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/openapi/v1.json", "UsuariosAPI v1");
+    });
 }
 
+// 2. Middlewares base de la API
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
+// 3. El arranque definitivo (SIEMPRE VA AL FINAL)
 app.Run();

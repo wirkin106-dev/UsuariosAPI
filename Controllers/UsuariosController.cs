@@ -11,10 +11,12 @@ namespace UsuariosAPI.Controllers
     public class UsuariosController : ControllerBase
     {
         private readonly IUsuarioService _service;
+        private readonly ILogService _logService;
 
-        public UsuariosController(IUsuarioService service)
+        public UsuariosController(IUsuarioService service, ILogService logService)
         {
             _service = service;
+            _logService = logService;
         }
 
         [HttpGet]
@@ -75,6 +77,17 @@ namespace UsuariosAPI.Controllers
             if (!resultado)
                 return NotFound(new { mensaje = "Usuario no encontrado." });
             return Ok(new { mensaje = "Usuario eliminado correctamente." });
+        }
+
+        [HttpGet("logs")]
+        public async Task<IActionResult> GetLogs()
+        {
+            var logs = await _logService.ObtenerLogsAsync();
+
+            if (!logs.Any())
+                return Ok(new { mensaje = "No hay logs registrados.", logs = new List<object>() });
+
+            return Ok(logs);
         }
     }
 }

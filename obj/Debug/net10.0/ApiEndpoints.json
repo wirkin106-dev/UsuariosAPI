@@ -400,6 +400,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "UsuariosAPI.Controllers.UsuariosController",
+    "Method": "GetLogs",
+    "RelativePath": "api/usuarios/logs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "UsuariosAPI.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
