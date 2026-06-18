@@ -293,6 +293,7 @@ En cada endpoint protegido agrega en **Headers**:
 ### Tarea 6 - Autenticación JWT
 
 #### POST - Login (200 OK con token JWT)
+<<<<<<< HEAD
 ![POST Login](images/post-login.jfif)
 
 #### GET - Sin token (401 Unauthorized)
@@ -374,6 +375,18 @@ En cada endpoint protegido agrega en **Headers**:
 
 #### Archivo JSON de logs generado automáticamente
 ![Archivo JSON de logs](images/04_Logs/usuarios-log-archivo.jfif)
+=======
+![POST Login](images/post-login.jpg)
+
+#### GET - Sin token (401 Unauthorized)
+![GET Sin token](images/get-sin-token.jgp)
+
+#### GET - Con token (200 OK)
+![GET Con token](images/get-con-token.jpg)
+
+#### POST - Refresh token (200 OK)
+![POST Refresh](images/post-refresh.jpg)
+>>>>>>> origin/main
 
 ---
 
