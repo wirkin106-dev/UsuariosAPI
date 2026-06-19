@@ -9,7 +9,9 @@ namespace UsuariosAPI.Services
 
         public LogService()
         {
-            _logPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "usuarios_log.json");
+            var baseDirectory = AppContext.BaseDirectory;
+            var projectRoot = Path.GetFullPath(Path.Combine(baseDirectory, "..", "..", ".."));
+            _logPath = Path.Combine(projectRoot, "usuarios_log.json");
         }
 
         public async Task RegistrarAsync(LogEntryDto entry)
