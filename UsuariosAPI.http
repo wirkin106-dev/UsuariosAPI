@@ -1,6 +1,13 @@
-@UsuariosAPI_HostAddress = http://localhost:5047
+### 1. LOGIN PARA OBTENER EL TOKEN DE FELDI
+POST http://localhost:5047/api/auth/login
+Content-Type: application/json
 
-GET {{UsuariosAPI_HostAddress}}/weatherforecast/
-Accept: application/json
+{
+  "correo": "felix1@gmail.com",
+  "password": "123765"
 
 ###
+### 2. OBTENER LOS LOGS DE USUARIOS
+GET https://localhost:7023/api/usuarios/logs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4IiwiZW1haWwiOiJmZWxpeDFAZ21haWwuY29tIiwianRpIjoiYWZmNGFmMjEtOTk5NS00ZGYzLWI2MTMtNDNlZmViMjBjYzcxIiwiZXhwIjoxNzgxODk5MjQ0LCJpc3MiOiJVc3Vhcmlvc0FQSSIsImF1ZCI6IlVzdWFyaW9zQVBJQ2xpZW50ZXMifQ._PvjNEoa30TuyBZGFqDTf7iQtxq4np1uYn65icnltSI
+Accept: application/json

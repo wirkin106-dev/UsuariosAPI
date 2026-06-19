@@ -1,0 +1,17 @@
+[
+  {
+    "Fecha": "2026-06-19T18:45:47.0160325Z",
+    "Accion": "REGISTRO",
+    "Detalle": "Usuario creado: Felix Alexander | Correo: Paco@gmail.com | Id: 6"
+  },
+  {
+    "Fecha": "2026-06-19T18:56:58.6223825Z",
+    "Accion": "REGISTRO",
+    "Detalle": "Usuario creado: paco salvador | Correo: felix@gmail.com | Id: 7"
+  },
+  {
+    "Fecha": "2026-06-19T18:57:13.1088928Z",
+    "Accion": "REGISTRO",
+    "Detalle": "Usuario creado: feldi salvador | Correo: felix1@gmail.com | Id: 8"
+  }
+]
