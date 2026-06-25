@@ -5,7 +5,7 @@
     "Detalle": "Usuario creado: Felix Alexander | Correo: Paco@gmail.com | Id: 6"
   },
   {
-    "Fecha": "2026-06-19T18:56:58.6223825Z",
+    "Fecha": "2026-06-19T18:56:58.6223828Z",
     "Accion": "REGISTRO",
     "Detalle": "Usuario creado: paco salvador | Correo: felix@gmail.com | Id: 7"
   },
@@ -13,5 +13,20 @@
     "Fecha": "2026-06-19T18:57:13.1088928Z",
     "Accion": "REGISTRO",
     "Detalle": "Usuario creado: feldi salvador | Correo: felix1@gmail.com | Id: 8"
+  },
+  {
+    "Fecha": "2026-06-23T19:52:41.4144525Z",
+    "Accion": "REGISTRO",
+    "Detalle": "Usuario creado: Pablito | Correo: pablorpo@gmail.com | Id: 9"
+  },
+  {
+    "Fecha": "2026-06-24T18:03:39.6114683Z",
+    "Accion": "REGISTRO",
+    "Detalle": "Usuario creado: Felix | Correo: vasques@gmail.com | Id: 10"
+  },
+  {
+    "Fecha": "2026-06-24T23:03:15.4243767Z",
+    "Accion": "REGISTRO",
+    "Detalle": "Usuario creado: Arelis | Correo: Alis@gmail.com | Id: 11"
   }
 ]
