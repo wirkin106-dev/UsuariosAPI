@@ -28,5 +28,15 @@
     "Fecha": "2026-06-24T23:03:15.4243767Z",
     "Accion": "REGISTRO",
     "Detalle": "Usuario creado: Arelis | Correo: Alis@gmail.com | Id: 11"
+  },
+  {
+    "Fecha": "2026-06-25T23:51:34.277561Z",
+    "Accion": "REGISTRO",
+    "Detalle": "Usuario creado: Lixander | Correo: alexander@mail.com | Id: 12"
+  },
+  {
+    "Fecha": "2026-06-25T23:56:09.9708363Z",
+    "Accion": "REGISTRO",
+    "Detalle": "Usuario creado: Lixander1 | Correo: alexander23@mail.com | Id: 13"
   }
 ]
